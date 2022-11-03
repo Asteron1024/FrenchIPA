@@ -98,6 +98,8 @@ namespace FrenchIPA {
         if (!alternative)
           break;
       }
+      correct &= index == transcription.Length;
+      alternative &= index == transcription.Length;
       return correct ? true : alternative ? null : false;
     }
   }

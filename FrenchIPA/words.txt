@@ -1281,7 +1281,7 @@
 1286	étinceler	искриться, сверкать	[etɛ̃s(ə)le]	
 1287	crue	наводнение	[kʁy]	
 1288	fonder	основывать	[fɔ̃de]	
-1289	éblouissante	ослепительный	[ebluisɑ̃]	
+1289	éblouissant	ослепительный	[ebluisɑ̃]	
 1290	maugréer	придираться	[mogʁee]	
 1291	plaisanterie	шутка	[plɛzɑ̃tʁi]	
 1292	avoine	овес	[avwan]	

@@ -5,7 +5,7 @@ namespace FrenchIPA {
     public static List<Rule> List { get; set; } = new List<Rule>() {
       new Rule(new Regex("(e|es)$"), ""),
       new Rule(new Regex("e[rz]$"), "e"),
-      new Rule(new Regex("[tdzsxgpbc]+$"), ""),
+      new Rule(new Regex("[tdzsxgpb]+$"), ""),
 
       new Rule(new Regex("ueil+"), "œj"),
       new Rule(new Regex("eill"), "ɛj", "ej"),
@@ -17,7 +17,6 @@ namespace FrenchIPA {
       new Rule(new Regex("(?<=^i)ll"), "l"),
       new Rule(new Regex("ill"), "ij"),
       new Rule(new Regex("(?<=[aeiouéèâôy])il$"), "j"),
-      new Rule(new Regex("(?<=[bcdfgjklmnprstvz])il$"), ""),
 
       new Rule(new Regex("oin(?![aeiounméèâôy])"), "wɛ̃"),
       new Rule(new Regex("(im|in|ain|ein|aim|ym)(?![aeiounméèâôy])"), "ɛ̃"),
@@ -49,9 +48,10 @@ namespace FrenchIPA {
       new Rule(new Regex("gu(?=[eiéèê])"), "g"),
       new Rule(new Regex("ge(?=[ao])"), "ʒ"),
 
-      new Rule(new Regex("ou(?=(e.|[aé]|ï|i[^l]))"), "w"),
+      new Rule(new Regex("ou(?=(e.|[aé]|ï|i[^l]))"), "w", "u"),
       new Rule(new Regex("o[uû]"), "u"),
-      new Rule(new Regex("u(?=(i|î|er|eu|é|è|e.|a))"), "ɥ"),
+      new Rule(new Regex("u(?=(i|î|er|eu|é|è|e.|a))"), "ɥ", "y"),
+      new Rule(new Regex("ü"), "y"),
       new Rule(new Regex("(?<=[bcdfgjkptvz][bcdfgjklmprvz])i(?=er|o|é|è|an)"), "ij"),
       new Rule(new Regex("i(?=[èoaéu])"), "j"),
       new Rule(new Regex("[iï](?=e.)"), "j"),
